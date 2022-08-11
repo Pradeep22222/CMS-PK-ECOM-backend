@@ -7,10 +7,10 @@ POST http://localhost:8000/api/v1/admin-user
 Content-Type: application/json
 
 {
-    "fName":"demo4",
-    "lName":"demo4",
-    "email":"demo4@demo4.com",
-    "password":"demo4",
+    "fName":"check2",
+    "lName":"check2",
+    "email":"check2@check2.com",
+    "password":"check2",
     "phone":"0451644397",
     "address":"clearence",
     "dob":"1997/10/26"
