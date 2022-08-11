@@ -32,7 +32,23 @@ export const verificationEmail = (emailData) => {
     html: `
     <p> Hi ${emailData.fName}</P>
     <p> please follow the following link to confirm your account</P>
-    <a>${emailData.url}</a>
+    <a href=${emailData.url}>click to verify</a>
+
+    `, // html body
+  };
+  emailProcessor(emailBody);
+};
+export const userVerifiedNotification = (emailData) => {
+  const emailBody = {
+    from: '" PK-E-COM 👻" <pradeepdhital@pk.com>', // sender address
+    to: emailData.email, // list of receivers
+    subject: "Account has been verified", // Subject line
+    text: `Hi ${emailData.fName}, Your account has been verified, you may login now ${process.env.ROOT_DOMAIN}`, // plain text body
+    html: `
+   
+    <p> Hi ${emailData.fName}</P>
+    <p>Your account has been verified, you may logged in now. </p>
+    <a href="${process.env.ROOT_DOMAIN}">click here to go to homepage to login</a>
 
     `, // html body
   };

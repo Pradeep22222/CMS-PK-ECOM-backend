@@ -7,11 +7,22 @@ POST http://localhost:8000/api/v1/admin-user
 Content-Type: application/json
 
 {
-    "fName":"dhigtal",
-    "lName":"Dhital",
-    "email":"pep@yaf.com",
-    "password":"123456",
+    "fName":"demo4",
+    "lName":"demo4",
+    "email":"demo4@demo4.com",
+    "password":"demo4",
     "phone":"0451644397",
     "address":"clearence",
     "dob":"1997/10/26"
+}
+
+### login admin user
+POST http://localhost:8000/api/v1/admin-user/login
+Content-Type: application/json
+
+{
+    
+    "email":"demo4@demo4.com",
+    "password":"demo4"
+
 }
